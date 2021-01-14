@@ -5,6 +5,7 @@ deploy openproject
 kubectl create deployment openproject --image=openproject/community:11
 kubectl expose deployment openproject --port=80 --name=openproject
 ```
+> user: `admin` pass: `admin`
 
 delete everything:
 ```bash
