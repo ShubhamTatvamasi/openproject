@@ -6,6 +6,11 @@ kubectl create deployment openproject --image=openproject/community:11
 kubectl expose deployment openproject --port=80 --name=openproject
 ```
 
+delete everything:
+```bash
+kubectl delete deploy/openproject svc/openproject ing/openproject
+```
+
 create ingress value:
 ```bash
 kubectl apply -f - << EOF
