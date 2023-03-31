@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  openproject:
+    image: openproject/community:12
+    container_name: openproject
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - OPENPROJECT_HTTPS=false
